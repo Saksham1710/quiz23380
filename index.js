@@ -16,7 +16,7 @@ const modelSchema = new mongoose.Schema({
   studentID: String,
 })
 
-const Model = mongoose.model('w24students',modelSchema,'w24students');
+const Model = mongoose.model('w24students',modelSchema);
 
 function inserInfo(name, studentID) {
   const newUser = new Model({
